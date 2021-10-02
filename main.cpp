@@ -121,7 +121,7 @@ float FloatType::divide(float lhs, float rhs)
     // warn the user if they're doing floating-point-division-by-zero 
     // but not prevent the division from happening
     if (rhs == 0.f) 
-        std::cout << "warning, floating point division by zero returns 'inf' !";        
+        std::cout << "\nwarning, floating point division by zero returns 'inf' !\n";        
     return lhs / rhs;
 }
 
@@ -151,7 +151,7 @@ double DoubleType::multiply(double lhs, double rhs)
 double DoubleType::divide(double lhs, double rhs)
 {
     if (rhs == 0.) 
-        std::cout << "warning, floating point division by zero returns 'inf' !";
+        std::cout << "\nwarning, floating point division by zero returns 'inf' !\n";
     return lhs / rhs;
 }
 
