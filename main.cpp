@@ -181,7 +181,8 @@ int IntType::multiply(int lhs, int rhs)
 int IntType::divide(int lhs, int rhs)
 {
     //  warn AND prevent the division from happening if it is an integer-division-by-zero.
-    if (rhs == 0) {
+    if (rhs == 0) 
+    {
         std::cout << "error, integer division by zero will crash the program!" << std::endl << "returning lhs" << std::endl;
         return lhs;   
     }
