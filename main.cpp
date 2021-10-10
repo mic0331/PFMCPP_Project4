@@ -154,6 +154,12 @@ struct FloatType
     FloatType& divide(const FloatType& dt);
 
     FloatType(float v) : value(new float(v)) {}
+
+    ~FloatType()
+    {
+        delete value;
+        value = nullptr;
+    }
 };
 
 FloatType& FloatType::add(float rhs)
@@ -209,6 +215,12 @@ struct DoubleType
     DoubleType& divide(const FloatType& dt);
 
     DoubleType(double d) : value(new double(d)) {}
+
+    ~DoubleType()
+    {
+        delete value;
+        value = nullptr;
+    }
 };
 
 DoubleType& DoubleType::add(double rhs)
@@ -262,6 +274,12 @@ struct IntType
     IntType& divide(const FloatType& dt);
 
     IntType(int i) : value(new int(i)) {}
+
+    ~IntType()
+    {
+        delete value;
+        value = nullptr;
+    }
 };
 
 IntType& IntType::add(int rhs)
